@@ -16,22 +16,12 @@
 
     <main>
 
-    <?php 
+    <form method="POST" action="resultado.php">
+  <label>Digite a distância em metros:</label><br>
+  <input type="number" name="metros" step="0.01" required><br><br>
+  <input type="submit" value="Converter">
+    </form>
 
-    function ConverterMetrosCentimetros($metros) {
-        $resultado = $metros * 100;
-        return $resultado;
-    }
-   
-   echo ConverterMetrosCentimetros(99);
-
-    // $distanciaMetros = 100;
-
-    // $x = ConverterMetrosCentimetros(100);
-
-    // echo $x;
-
-    ?>
      
     </main>
 </body>

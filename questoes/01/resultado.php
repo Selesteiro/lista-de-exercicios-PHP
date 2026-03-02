@@ -11,16 +11,15 @@
 <body>
 
     <header>
-        <h2>Questão 1: Antecessor de um Valor</h2>
+        <h2>Questão 1: resultado </h2>
     </header>
 
     <main>
 
-    <form method="POST" action="resultado.php">
-  <label>Digite um número:</label><br>
-  <input type="number" name="valor" required><br><br>
-  <input type="submit" value="Ver antecessor">
-    </form>
+   <?php
+$valor = (int)$_POST["valor"];
+echo "O antecessor de $valor é " . ($valor - 1);
+    ?>
 
     </main>
 </body>

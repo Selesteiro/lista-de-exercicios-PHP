@@ -11,17 +11,17 @@
 <body>
 
     <header>
-        <h2>Questão 1: Antecessor de um Valor</h2>
+        <h2>Questão 02: resultado</h2>
     </header>
 
     <main>
 
-    <form method="POST" action="resultado.php">
-  <label>Digite um número:</label><br>
-  <input type="number" name="valor" required><br><br>
-  <input type="submit" value="Ver antecessor">
-    </form>
-
+    <?php
+$metros = (float)$_POST["metros"];
+$cm = $metros * 100;
+echo "$metros metro(s) = $cm centímetro(s)";
+    ?>
+     
     </main>
 </body>
 
