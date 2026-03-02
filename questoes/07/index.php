@@ -16,8 +16,17 @@
 
     <main>
 
-    <!-- implementação da solução -->
-     fofo
+    <?php
+$numero = 5;
+$fatorial = 1;
+
+for ($i = 1; $i <= $numero; $i++) {
+    $fatorial *= $i;
+}
+
+echo "Fatorial de $numero é $fatorial";
+    ?>
+
     </main>
 </body>
 

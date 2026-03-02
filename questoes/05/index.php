@@ -14,10 +14,23 @@
         <h2>Questão 05: Maior de Três Números</h2>
     </header>
 
-    <main>
+   <main>
+<?php
+$a = 10;
+$b = 25;
+$c = 18;
 
-    <!-- implementação da solução -->
-     
+$maior = $a;
+
+if ($b > $maior) {
+    $maior = $b;
+}
+if ($c > $maior) {
+    $maior = $c;
+}
+
+echo "O maior número é: $maior";
+?>
     </main>
 </body>
 

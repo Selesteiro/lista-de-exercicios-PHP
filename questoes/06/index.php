@@ -15,10 +15,18 @@
     </header>
 
     <main>
+<?php
+$numeros = [12, 5, 20];
 
-    <!-- implementação da solução -->
-     
+rsort($numeros); // ordena em ordem decrescente
+
+echo "Ordem decrescente:<br>";
+foreach ($numeros as $n) {
+    echo $n . "<br>";
+}
+?>
     </main>
+    
 </body>
 
 

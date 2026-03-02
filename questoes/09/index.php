@@ -16,7 +16,14 @@
 
     <main>
 
-    <!-- implementação da solução -->
+    <?php
+$nome = "João";
+$idade = 20;
+
+$diasVida = $idade * 365;
+
+echo "$nome possui aproximadamente $diasVida dias de vida.";
+    ?>
      
     </main>
 </body>

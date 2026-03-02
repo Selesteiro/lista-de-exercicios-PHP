@@ -16,7 +16,16 @@
 
     <main>
 
-    <!-- implementação da solução -->
+    <?php
+$segundos = 3665;
+
+$horas = intdiv($segundos, 3600);
+$resto = $segundos % 3600;
+$minutos = intdiv($resto, 60);
+$segundosFinais = $resto % 60;
+
+echo "$horas hora(s), $minutos minuto(s) e $segundosFinais segundo(s)";
+    ?>
      
     </main>
 </body>
