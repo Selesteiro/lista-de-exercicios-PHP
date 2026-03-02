@@ -11,18 +11,25 @@
 <body>
 
     <header>
-        <h2>Questão 07: Fatorial </h2>
+        <h2>Questão 08: Resultado</h2>
     </header>
 
     <main>
+        
+    <?php
+echo "Números ímpares entre 1 e 50:<br>";
 
-   <form method="POST" action="resultado.php">
-  <label>Digite um número inteiro:</label><br>
-  <input type="number" name="numero" min="0" required><br><br>
-  <input type="submit" value="Calcular fatorial">
-    </form>
+for ($i = 1; $i <= 50; $i++) {
+  if ($i % 2 != 0) echo $i . "<br>";
+}
+    ?>
     </main>
 </body>
+
+<br><br>
+<a href="../../index.php">
+    <button>⬅ Voltar para a página inicial</button>
+</a>
 
 
 </html>

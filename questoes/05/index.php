@@ -11,26 +11,18 @@
 <body>
 
     <header>
-        <h2>Questão 05: Maior de Três Números</h2>
+        <h2>Questão 05:  Maior de Três Números</h2>
     </header>
 
    <main>
-<?php
-$a = 10;
-$b = 25;
-$c = 18;
 
-$maior = $a;
+<form method="POST" action="resultado.php">
+  <input type="number" name="n1" placeholder="Número 1" required><br>
+  <input type="number" name="n2" placeholder="Número 2" required><br>
+  <input type="number" name="n3" placeholder="Número 3" required><br><br>
+  <input type="submit" value="Ver maior">
+</form>
 
-if ($b > $maior) {
-    $maior = $b;
-}
-if ($c > $maior) {
-    $maior = $c;
-}
-
-echo "O maior número é: $maior";
-?>
     </main>
 </body>
 

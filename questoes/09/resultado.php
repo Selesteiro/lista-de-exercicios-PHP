@@ -11,18 +11,27 @@
 <body>
 
     <header>
-        <h2>Questão 07: Fatorial </h2>
+        <h2>Questão 09: Resultado</h2>
     </header>
 
     <main>
 
-   <form method="POST" action="resultado.php">
-  <label>Digite um número inteiro:</label><br>
-  <input type="number" name="numero" min="0" required><br><br>
-  <input type="submit" value="Calcular fatorial">
-    </form>
+<?php
+$nome = $_POST["nome"];
+$idade = (int)$_POST["idade"];
+
+$dias = $idade * 365;
+
+echo "$nome possui aproximadamente $dias dias de vida.";
+?>
+
     </main>
 </body>
+
+<br><br>
+<a href="../../index.php">
+    <button>⬅ Voltar para a página inicial</button>
+</a>
 
 
 </html>

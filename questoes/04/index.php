@@ -15,15 +15,13 @@
     </header>
 
     <main>
-<?php
-$numero = 5;
+        
+<form method="POST" action="resultado.php">
+  <label>Digite um número inteiro:</label><br>
+  <input type="number" name="numero" required><br><br>
+  <input type="submit" value="Gerar tabuada">
+</form>
 
-echo "<h3>Tabuada do $numero</h3>";
-
-for ($i = 1; $i <= 10; $i++) {
-    echo "$numero x $i = " . ($numero * $i) . "<br>";
-}
-?>
     </main>
 </body>
 

@@ -11,18 +11,30 @@
 <body>
 
     <header>
-        <h2>Questão 07: Fatorial </h2>
+        <h2>Questão 06: Resultado</h2>
     </header>
 
     <main>
+        
+<?php
+$nums = [(float)$_POST["n1"], (float)$_POST["n2"], (float)$_POST["n3"]];
 
-   <form method="POST" action="resultado.php">
-  <label>Digite um número inteiro:</label><br>
-  <input type="number" name="numero" min="0" required><br><br>
-  <input type="submit" value="Calcular fatorial">
-    </form>
+rsort($nums);
+
+echo "Ordem decrescente:<br>";
+foreach ($nums as $n) {
+  echo $n . "<br>";
+}
+?>
+
     </main>
+    
 </body>
+
+<br><br>
+<a href="../../index.php">
+    <button>⬅ Voltar para a página inicial</button>
+</a>
 
 
 </html>

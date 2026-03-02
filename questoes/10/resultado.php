@@ -11,16 +11,20 @@
 <body>
 
     <header>
-        <h2>Questão 1: resultado </h2>
+        <h2>Questão 10: Calculando as Horas</h2>
     </header>
 
     <main>
+<?php
+$segundos = (int)$_POST["segundos"];
 
-   <?php
-$valor = (int)$_POST["valor"];
-echo "O antecessor de $valor é " . ($valor - 1);
-    ?>
+$horas = intdiv($segundos, 3600);
+$resto = $segundos % 3600;
+$minutos = intdiv($resto, 60);
+$segundos_finais = $resto % 60;
 
+echo "$horas hora(s), $minutos minuto(s) e $segundos_finais segundo(s)";
+?>
     </main>
 </body>
 
@@ -29,6 +33,5 @@ echo "O antecessor de $valor é " . ($valor - 1);
 <a href="../../index.php">
     <button>⬅ Voltar para a página inicial</button>
 </a>
-
 
 </html>

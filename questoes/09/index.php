@@ -16,15 +16,12 @@
 
     <main>
 
-    <?php
-$nome = "João";
-$idade = 20;
+<form method="POST" action="resultado.php">
+  <input type="text" name="nome" placeholder="Nome" required><br>
+  <input type="number" name="idade" placeholder="Idade" min="0" required><br><br>
+  <input type="submit" value="Calcular">
+</form>
 
-$diasVida = $idade * 365;
-
-echo "$nome possui aproximadamente $diasVida dias de vida.";
-    ?>
-     
     </main>
 </body>
 

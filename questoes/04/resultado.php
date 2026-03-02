@@ -11,18 +11,26 @@
 <body>
 
     <header>
-        <h2>Questão 07: Fatorial </h2>
+        <h2>Questão 04: Resultado</h2>
     </header>
 
     <main>
+    <?php
+$numero = (int)$_POST["numero"];
 
-   <form method="POST" action="resultado.php">
-  <label>Digite um número inteiro:</label><br>
-  <input type="number" name="numero" min="0" required><br><br>
-  <input type="submit" value="Calcular fatorial">
-    </form>
+echo "<h3>Tabuada do $numero</h3>";
+
+for ($i = 1; $i <= 10; $i++) {
+  echo "$numero x $i = " . ($numero * $i) . "<br>";
+}
+    ?>
     </main>
 </body>
+
+<br><br>
+<a href="../../index.php">
+    <button>⬅ Voltar para a página inicial</button>
+</a>
 
 
 </html>

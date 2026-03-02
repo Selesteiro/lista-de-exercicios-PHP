@@ -16,16 +16,11 @@
 
     <main>
 
-    <?php
-$segundos = 3665;
-
-$horas = intdiv($segundos, 3600);
-$resto = $segundos % 3600;
-$minutos = intdiv($resto, 60);
-$segundosFinais = $resto % 60;
-
-echo "$horas hora(s), $minutos minuto(s) e $segundosFinais segundo(s)";
-    ?>
+    <form method="POST" action="resultado.php">
+  <label>Duração do evento (em segundos):</label><br>
+  <input type="number" name="segundos" min="0" required><br><br>
+  <input type="submit" value="Converter">
+    </form>
      
     </main>
 </body>

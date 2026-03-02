@@ -25,5 +25,9 @@ echo "$metros metro(s) = $cm centímetro(s)";
     </main>
 </body>
 
+<br><br>
+<a href="../../index.php">
+    <button>⬅ Voltar para a página inicial</button>
+</a>
 
 </html>

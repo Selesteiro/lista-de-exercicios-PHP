@@ -15,16 +15,14 @@
     </header>
 
     <main>
-<?php
-$numeros = [12, 5, 20];
+        
+<form method="POST" action="resultado.php">
+  <input type="number" name="n1" placeholder="Número 1" required><br>
+  <input type="number" name="n2" placeholder="Número 2" required><br>
+  <input type="number" name="n3" placeholder="Número 3" required><br><br>
+  <input type="submit" value="Ordenar">
+</form> 
 
-rsort($numeros); // ordena em ordem decrescente
-
-echo "Ordem decrescente:<br>";
-foreach ($numeros as $n) {
-    echo $n . "<br>";
-}
-?>
     </main>
     
 </body>
